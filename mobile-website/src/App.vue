@@ -1,0 +1,40 @@
+<template>
+  <div id="app">
+    <router-view/>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  min-height: 100vh;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  #app {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+/* 确保在移动设备上显示正常 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+</style>

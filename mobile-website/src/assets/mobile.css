@@ -1,0 +1,109 @@
+/* 移动端适配样式 */
+
+/* 基础重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* 移动端优化 */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  /* 按钮优化 */
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    /* 防止iOS缩放 */
+    border-radius: 6px;
+  }
+
+  /* 输入框优化 */
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+    /* 防止iOS缩放 */
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  /* 图片优化 */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 文本优化 */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  /* 导航优化 */
+  .nav-menu {
+    flex-direction: column;
+  }
+}
+
+/* 触摸设备优化 */
+@media (hover: none) and (pointer: coarse) {
+
+  button,
+  .btn {
+    min-height: 44px;
+    /* 符合无障碍标准 */
+    min-width: 44px;
+  }
+}
+
+/* 防止文本选择 */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 滚动条优化 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
