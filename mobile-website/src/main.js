@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './assets/mobile.css'
+import './style/var.scss'
 
 const app = createApp(App)
 

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <header class="header">
+    <!-- <header class="header">
       <h1>欢迎来到明星网站</h1>
       <div class="auth-buttons" v-if="!isLoggedIn">
         <button @click="goToLogin">登录</button>
@@ -10,7 +10,7 @@
         <span>欢迎, {{ currentUser.username }}!</span>
         <button @click="logout">退出</button>
       </div>
-    </header>
+    </header> -->
     
     <main class="main-content">
       <div class="module-grid">

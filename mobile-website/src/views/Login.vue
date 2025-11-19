@@ -35,6 +35,10 @@
       <div class="register-link">
         <p>还没有账号？<router-link to="/register">立即注册</router-link></p>
       </div>
+            <div class="register-link">
+              <router-link to="/Home">游客登录</router-link>
+      
+      </div>
     </div>
   </div>
 </template>
@@ -74,9 +78,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '../style/var.scss';
 .login {
   padding: 1rem;
+    background-image: url('../assets/image/bg-login.jpg');
+  height: 100vh;
+  background-size: cover;
 }
 
 .module-header {
@@ -86,7 +94,7 @@ export default {
 }
 
 .back-button {
-  background-color: #42b983;
+  background-color: $--color-default;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -126,7 +134,7 @@ export default {
 
 .login-button {
   width: 100%;
-  background-color: #42b983;
+  background-color: $--color-default;
   color: white;
   border: none;
   padding: 0.7rem;
@@ -141,7 +149,7 @@ export default {
 }
 
 .register-link a {
-  color: #42b983;
+  color: $--color-default;
   text-decoration: none;
 }
 </style>
